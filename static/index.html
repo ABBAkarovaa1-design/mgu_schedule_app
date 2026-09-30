@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <title>МГУ • Расписание</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="header-copy">
+        <div class="eyebrow">МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</div>
+
+        <h1>Расписание</h1>
+
+        <p id="date"></p>
+      </div>
+
+      <img
+        src="/static/mgu.png"
+        class="crest"
+        alt="МГУ"
+      >
+    </header>
+
+    <div class="header-line"></div>
+
+    <section class="toolbar">
+
+      <div class="group-wrap">
+        <label for="group">ГРУППА</label>
+
+        <div class="select-wrap">
+          <select id="group">
+            <option>Загрузка...</option>
+          </select>
+          <span class="select-arrow">⌄</span>
+        </div>
+      </div>
+
+      <div class="week-wrap">
+        <div class="week-title">
+          <button id="prev" class="arrow-btn" aria-label="Предыдущая неделя">‹</button>
+
+          <div class="week-center">
+            <div id="weekLabel">ТЕКУЩАЯ НЕДЕЛЯ</div>
+            <small id="weekDates"></small>
+          </div>
+
+          <button id="next" class="arrow-btn" aria-label="Следующая неделя">›</button>
+        </div>
+      </div>
+
+    </section>
+
+    <nav id="days" class="days" aria-label="Дни недели"></nav>
+
+    <main id="schedule" class="schedule"></main>
+
+    <footer class="footer">
+      <div>МГУ · РАСПИСАНИЕ</div>
+      <span>МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</span>
+    </footer>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+
+</body>
+</html>
