@@ -60,3 +60,4 @@ python bot.py
 ## Эмблема
 `static/mgu.png` должна быть официальной/разрешённой для использования эмблемой МГУ.
 # mgu_schedule_app
+# mgu_schedule_app
